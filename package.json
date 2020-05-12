@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build -prod -oh=none --extract-css=false && ng-packagr -p ./projects/hc-widget/ng-package.json && cd dist && npm pack",
+    "build": "ng build -prod -oh=none --extract-css=false && ng-packagr -p ./projects/hc-widget/ng-package.json && cd dist/hc-widget && npm pack",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "packagr" : "ng-packagr -p ./projects/hc-widget/ng-package.json"
   },
   "private": true,
   "dependencies": {
